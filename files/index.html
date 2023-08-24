@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="/static/output.css">
+    <script src="/static/htmx.js"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-serif">
+        Hey World!
+    </h1>
+    <button hx-get="/all" hx-trigger="click" hx-swap="innerHTML">
+        Click to get posts
+    </button>
+</body>
+</html>
